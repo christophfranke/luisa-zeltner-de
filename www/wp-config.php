@@ -18,18 +18,22 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', 'luisazeltner.de');
+if( file_exists('wp-config-local.php') )
+{
+	include('wp-config-local.php');
+}
+else
+{
+	define('DB_NAME', 'db12538803-luisa');
+	define('DB_USER', 'db12538803-luisa');
+	define('DB_PASSWORD', 'sahnetorte');
+	define('DB_HOST', 'localhost');
 
-/** MySQL database username */
-define('DB_USER', 'root');
+	define('WP_SITEURL', 'http://luisazeltner.de');
+}
 
-/** MySQL database password */
-define('DB_PASSWORD', 'sahnetorte');
+define('WP_HOME', WP_SITEURL);
 
-/** MySQL hostname */
-define('DB_HOST', 'localhost:/tmp/mysql.sock');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
