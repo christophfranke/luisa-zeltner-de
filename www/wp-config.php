@@ -18,9 +18,11 @@
  * @package WordPress
  */
 
-if( file_exists('wp-config-local.php') )
+$local_config_file = dirname(__FILE__) . '/wp-config-local.php';
+
+if( file_exists( $local_config_file ) )
 {
-	include('wp-config-local.php');
+	include($local_config_file);
 }
 else
 {
@@ -31,6 +33,7 @@ else
 
 	define('WP_SITEURL', 'http://luisazeltner.de');
 }
+
 
 define('WP_HOME', WP_SITEURL);
 
