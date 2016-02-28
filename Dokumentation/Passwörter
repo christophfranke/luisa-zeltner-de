@@ -1,5 +1,7 @@
 Wordpress Login:
-admin/sahnetorte
+url: luisazeltner.local/wp-admin
+user: admin/sahnetorte
+user: luisa/pause-im-glas
 
 Kis Login:
 kis.hosteurope.de
