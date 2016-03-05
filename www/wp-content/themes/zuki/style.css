@@ -1208,6 +1208,15 @@ a.archive-menu-close span,
 	font-weight: bold;
 }
 
+.single-post img.wp-post-image {
+	width: 50%;
+	height: auto;
+	float: right;
+	margin: 15px;
+	margin-top: 35px;
+	margin-right:0;
+}
+
 /* --- Typography --- */
 .entry-content p,
 .entry-content p.standard-text,
