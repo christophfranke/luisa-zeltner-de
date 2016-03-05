@@ -9,8 +9,11 @@ kis.hosteurope.de
 
 FTP:
 WP092.WEBPACK.HOSTEUROPE.DE
-ftp12538803-luisa
-sahnetorte/pause-im-glas (vergessen, welches ich da genommen habe, aber es ist eins von beiden)
+ftp12538803-luisa/pause-im-glas
 
 Hosteurope Email-Konto
 wp12538803-luisa/pause-im-glas
+
+Mysql:
+https://dbadmin.hosteurope.de/phpmyadmin/login.php?user=db12538803-luisa&servername=wp092&db=db12538803-luisa
+sahnetorte
