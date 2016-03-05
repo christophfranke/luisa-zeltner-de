@@ -509,8 +509,8 @@ function zuki_post_nav() {
 	?>
 	<div class="nav-wrap cf">
 		<nav id="nav-single">
-			<div class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">Previous Post</span>%title', 'zuki' ) ); ?></div>
-			<div class="nav-next"><?php next_post_link('%link', __( '<span class="meta-nav">Next Post</span>%title', 'zuki' ) ); ?></div>
+			<div class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">Vorheriges Rezept</span>%title', 'zuki' ) ); ?></div>
+			<div class="nav-next"><?php next_post_link('%link', __( '<span class="meta-nav">Nächstes Rezept</span>%title', 'zuki' ) ); ?></div>
 		</nav><!-- #nav-single -->
 	</div><!-- end .nav-wrap -->
 	<?php
