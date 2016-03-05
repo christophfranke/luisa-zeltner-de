@@ -3,6 +3,12 @@
  *
 */
 
+
+//slider: fade out watermark
+jQuery(document).ready(function ($){
+	$('.amazingslider-box-1 > div').last().hide();
+});
+
 // Mobile Menu.
 jQuery(document).ready(function(){
     	jQuery('#mobile-menu-wrap').hide();
