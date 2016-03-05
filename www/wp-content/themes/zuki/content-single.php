@@ -53,9 +53,12 @@
 	</div><!-- end .entry-content -->
 
 	<footer class="entry-meta">
+	<?php // do not show the categories
+		/*
 		<div class="entry-cats">
 			<span><?php _e('Filed under: ', 'zuki') ?></span><?php the_category(', '); ?>
 		</div><!-- end .entry-cats -->
+		*/ ?>
 		<?php $tags_list = get_the_tag_list();
 			if ( $tags_list ): ?>
 				<div class="entry-tags"><span><?php _e('Tagged with: ', 'zuki') ?></span><?php the_tags('', ', ', ''); ?></div>
