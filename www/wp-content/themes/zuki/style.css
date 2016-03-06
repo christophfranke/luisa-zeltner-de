@@ -3806,7 +3806,9 @@ div.sharedaddy h3,
 
 /* Minimum width of 1260 pixels (laptops 13")
 ------------------------------------------------------------------------------------ */
-@media screen and (min-width: 1260px) {
+/* @media screen and (min-width: 1260px) { */
+/* the mobile menu kicks in too early */
+@media screen and (min-width: 1024px) {
 
 	/* --- General --- */
 	#blog-sidebar,
