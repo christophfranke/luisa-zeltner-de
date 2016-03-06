@@ -1,3 +1,8 @@
+#AuthType Basic 
+#AuthUserFile 	/is/htdocs/wp12538803_YZ0YNEEOIZ/luisa-zeltner.de/www/.htpasswd
+#AuthName "Privater Inhalt" 
+#require valid-user
+
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 	RewriteBase /
