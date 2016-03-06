@@ -1905,6 +1905,12 @@ video {
 	overflow: hidden;
 }
 
+.search .entry-thumbnail {
+	width: 50%;
+	margin-left: 15px;
+	float: right;
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 /* 10.0 Widgets
