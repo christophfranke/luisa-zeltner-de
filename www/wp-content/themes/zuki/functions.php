@@ -533,6 +533,12 @@ function zuki_body_class( $classes ) {
 add_filter( 'body_class', 'zuki_body_class' );
 
 
+function google_analytics_script()
+{
+	include( get_template_directory() . '/google-analytics.php');
+}
+add_action('wp_footer', 'google_analytics_script');
+
 /*-----------------------------------------------------------------------------------*/
 /* Customizer additions
 /*-----------------------------------------------------------------------------------*/
