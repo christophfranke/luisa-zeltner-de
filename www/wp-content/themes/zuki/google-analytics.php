@@ -7,3 +7,17 @@
   ga('create', 'UA-74485035-1', 'auto');
   ga('send', 'pageview');
 </script>
+<script>
+/**
+* Funktion, mit der in Google Analytics Klicks auf externe Links erfasst werden
+* Bei dieser Funktion wird ein gültiger URL-String als Argument genommen und
+* als Ereignis-Label verwendet. Bei der Transportmethode "beacon" kann der Treffer
+* mit "navigator.sendBeacon" gesendet werden, sofern der Browser dies unterstützt.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+</script>
