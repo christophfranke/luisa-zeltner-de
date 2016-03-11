@@ -49,6 +49,8 @@
 				'before' => '<div class="page-links">' . __( 'Pages:', 'zuki' ),
 				'after'  => '</div>',
 			) );
+
+			do_action('append_print_buttons');
 		?>
 	</div><!-- end .entry-content -->
 

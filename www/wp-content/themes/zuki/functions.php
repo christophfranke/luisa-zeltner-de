@@ -539,6 +539,16 @@ function google_analytics_script()
 }
 add_action('wp_footer', 'google_analytics_script');
 
+function append_print_buttons_function()
+{
+	$link_print = get_permalink( $post->ID ) . '?print=print';
+	$link_pdf = get_permalink( $post->ID ) . '?print=pdf';
+
+	echo '<br><a href="' . $link_print . '" target="_blank">Drucken</a>';
+	echo ' / <a href="' . $link_pdf . '" target="_blank">PDF</a>';
+}
+add_action('append_print_buttons', 'append_print_buttons_function');
+
 /*-----------------------------------------------------------------------------------*/
 /* Customizer additions
 /*-----------------------------------------------------------------------------------*/
