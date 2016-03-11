@@ -405,6 +405,10 @@ textarea:active {
 	outline: none;
 }
 
+.clear {
+	clear:both;
+}
+
 /* --- Buttons --- */
 input[type="button"],
 input[type="submit"] {
