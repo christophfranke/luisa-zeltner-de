@@ -16,7 +16,11 @@ get_header(); ?>
 			<h1 class="archive-title">
 					<?php
 						if ( is_category() ) :
-							printf( __( 'All posts filed under: %s', 'zuki' ), '<span>' . single_cat_title( '', false ) . '</span>' );
+							$cat = single_cat_title( '', false );
+							if($cat == 'Rezepte'):
+								echo "<span>Alle Rezepte</span>";
+							endif;
+							// printf( __( 'All posts filed under: %s', 'zuki' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 
 						elseif ( is_tag() ) :
 							printf( __( 'All posts tagged: %s', 'zuki' ), '<span>' . single_tag_title( '', false ) . '</span>' );
