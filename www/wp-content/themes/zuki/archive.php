@@ -91,7 +91,7 @@ get_header(); ?>
       <div class="rp-medium-one-content">
          <?php if ( '' != get_the_post_thumbnail() ) : ?>
 			 <div class="entry-thumb">
-				 <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'zuki' ), the_title_attribute( 'echo=0' ) ) ); ?>"><?php the_post_thumbnail('zuki-medium-landscape'); ?></a>
+				 <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'zuki' ), the_title_attribute( 'echo=0' ) ) ); ?>"><?php the_post_thumbnail('small'); ?></a>
 			</div><!-- end .entry-thumb -->
 		<?php endif; ?>
 
