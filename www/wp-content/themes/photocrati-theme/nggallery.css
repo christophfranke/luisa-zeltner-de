@@ -1,0 +1,57 @@
+/* 
+
+This style sheet sets custom styles for the NextGen Gallery pages in this theme.
+
+*/
+
+.ngg-album-compact { /* This sets the position and padding for albums */
+	float 			: 	left;
+	padding-right 	: 	10px;
+}
+
+.ngg-albumtitle { /* This sets the styles for the album titles */
+	text-align 		: 	left;
+	text-transform 	: 	uppercase;
+	padding-bottom 	: 	5px;
+}
+
+.ngg-albumtitle a:link,.ngg-albumtitle a:visited {
+	color 			: 	#fff;
+}
+
+.ngg-albumtitle a:hover,
+.ngg-albumtitle a:active { /* This sets the styles for the album title links */
+	color 			: 	#417e4a;
+}
+
+.ngg-albumcontent img { /* This sets the margin and border for album images */
+	margin 			: 	0;
+	border 			: 	5px solid #e8e7e7;
+}
+
+.ngg-description { /* This sets the style for gallery descriptions */
+	font 			: 	normal 14px Georgia,Times,'Times New Roman';
+	font-style 		: 	italic;
+	color 			: 	#999;
+	text-align 		: 	left;
+}
+
+.ngg-description strong { /* This sets the style for stong gallery descriptions */
+	font-weight 	: 	normal;
+}
+
+.ngg-gallery-thumbnail { /* This sets the style for the gallery thumbnail container */
+	display 		: 	inline;
+}
+
+.ngg-gallery-thumbnail img { /* This sets the style for gallery thumbnail images */
+	float 			: 	left;
+	margin-right 	: 	10px;
+	border 			: 	5px solid #e8e7e7;
+}
+
+.ngg-widget img { /* This sets the style for ngg widget images */
+	position 		: 	relative;
+	margin 			: 	2px !important;
+	border 			: 	4px solid #e8e7e7;
+}
