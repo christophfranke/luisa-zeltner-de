@@ -14,13 +14,14 @@
 
 class zuki_recentposts_small_one extends WP_Widget {
 
-	function zuki_recentposts_small_one() {
-		$widget_ops = array('description' => __( 'Small Recents Posts widget with featured images.', 'zuki') );
-
-		parent::WP_Widget(false, __('Zuki: Recent Posts (Small 1)', 'zuki'),$widget_ops);
+	public function __construct() {
+		parent::__construct( 'zuki_recentposts_small_one', __( 'Zuki: Recent Posts (Small 1)', 'zuki' ), array(
+			'classname'   => 'widget_zuki_recentposts_small_one',
+			'description' => __( 'Small Recents Posts widget with featured images.', 'zuki' ),
+		) );
 	}
 
-	function widget($args, $instance) {
+	public function widget($args, $instance) {
 		$title = $instance['title'];
 		$postnumber = $instance['postnumber'];
 		$category = apply_filters('widget_title', $instance['category']);
@@ -105,14 +106,15 @@ register_widget('zuki_recentposts_small_one');
 /*-----------------------------------------------------------------------------------*/
 
 class zuki_recentposts_small_two extends WP_Widget {
-
-	function zuki_recentposts_small_two() {
-		$widget_ops = array('description' => __( 'Small Recents Posts widget without featured images.', 'zuki') );
-
-		parent::WP_Widget(false, __('Zuki: Recent Posts (Small 2)', 'zuki'),$widget_ops);
+	
+	public function __construct() {
+		parent::__construct( 'zuki_recentposts_small_two', __( 'Zuki: Recent Posts (Small 2)', 'zuki' ), array(
+			'classname'   => 'widget_zuki_recentposts_small_two',
+			'description' => __( 'Small Recents Posts widget without featured images.', 'zuki' ),
+		) );
 	}
 
-	function widget($args, $instance) {
+	public function widget($args, $instance) {
 		$title = $instance['title'];
 		$postnumber = $instance['postnumber'];
 		$category = apply_filters('widget_title', $instance['category']);
@@ -187,14 +189,15 @@ register_widget('zuki_recentposts_small_two');
 /*-----------------------------------------------------------------------------------*/
 
 class zuki_recentposts_medium_one extends WP_Widget {
-
-	function zuki_recentposts_medium_one() {
-		$widget_ops = array('description' => __( 'Medium-sized Recents Posts with featured image and excerpt.', 'zuki') );
-
-		parent::WP_Widget(false, __('Zuki: Recent Posts (Medium 1)', 'zuki'),$widget_ops);
+	
+	public function __construct() {
+		parent::__construct( 'zuki_recentposts_medium_one', __( 'Zuki: Recent Posts (Medium 1)', 'zuki' ), array(
+			'classname'   => 'widget_zuki_recentposts_medium_one',
+			'description' => __( 'Medium-sized Recents Posts with featured image and excerpt.', 'zuki' ),
+		) );
 	}
 
-	function widget($args, $instance) {
+	public function widget($args, $instance) {
 		$title = $instance['title'];
 		$postnumber = $instance['postnumber'];
 		$category = apply_filters('widget_title', $instance['category']);
@@ -298,14 +301,15 @@ register_widget('zuki_recentposts_medium_one');
 /*-----------------------------------------------------------------------------------*/
 
 class zuki_recentposts_medium_two extends WP_Widget {
-
-	function zuki_recentposts_medium_two() {
-		$widget_ops = array('description' => __( 'Medium-sized Recents Posts in a 2-column layout with featured image and excerpt.', 'zuki') );
-
-		parent::WP_Widget(false, __('Zuki: Recent Posts ( Medium 2)', 'zuki'),$widget_ops);
+	
+	public function __construct() {
+		parent::__construct( 'zuki_recentposts_medium_two', __( 'Zuki: Recent Posts (Medium 2)', 'zuki' ), array(
+			'classname'   => 'widget_zuki_recentposts_medium_two',
+			'description' => __( 'Medium-sized Recents Posts in a 2-column layout with featured image and excerpt.', 'zuki' ),
+		) );
 	}
 
-	function widget($args, $instance) {
+	public function widget($args, $instance) {
 		$title = $instance['title'];
 		$postnumber = $instance['postnumber'];
 		$category = apply_filters('widget_title', $instance['category']);
@@ -411,14 +415,15 @@ register_widget('zuki_recentposts_medium_two');
 /*-----------------------------------------------------------------------------------*/
 
 class zuki_recentposts_big_one extends WP_Widget {
-
-	function zuki_recentposts_big_one() {
-		$widget_ops = array('description' => __( 'Big Recents Posts with an overlay excerpt text. Featured images must have a minimum size of 1200x800 pixel.', 'zuki') );
-
-		parent::WP_Widget(false, __('Zuki: Recent Posts (Big 1)', 'zuki'),$widget_ops);
+	
+	public function __construct() {
+		parent::__construct( 'zuki_recentposts_big_one', __( 'Zuki: Recent Posts (Big 1)', 'zuki' ), array(
+			'classname'   => 'widget_zuki_recentposts_big_one',
+			'description' => __( 'Big Recents Posts with an overlay excerpt text. Featured images must have a minimum size of 1200x800 pixel.', 'zuki' ),
+		) );
 	}
 
-	function widget($args, $instance) {
+	public function widget($args, $instance) {
 		$title = $instance['title'];
 		$postnumber = $instance['postnumber'];
 		$category = apply_filters('widget_title', $instance['category']);
@@ -524,14 +529,15 @@ register_widget('zuki_recentposts_big_one');
 /*-----------------------------------------------------------------------------------*/
 
 class zuki_recentposts_big_two extends WP_Widget {
-
-	function zuki_recentposts_big_two() {
-		$widget_ops = array('description' => __( 'Big Recents Posts with featured image and a 2-column excerpt. Featured images must have a minimum size of 1200x800 pixel.', 'zuki') );
-
-		parent::WP_Widget(false, __('Zuki: Recent Posts (Big 2)', 'zuki'),$widget_ops);
+	
+	public function __construct() {
+		parent::__construct( 'zuki_recentposts_big_two', __( 'Zuki: Recent Posts (Big 2)', 'zuki' ), array(
+			'classname'   => 'widget_zuki_recentposts_big_two',
+			'description' => __( 'Big Recents Posts with featured image and a 2-column excerpt. Featured images must have a minimum size of 1200x800 pixel.', 'zuki' ),
+		) );
 	}
 
-	function widget($args, $instance) {
+	public function widget($args, $instance) {
 		$title = $instance['title'];
 		$postnumber = $instance['postnumber'];
 		$category = apply_filters('widget_title', $instance['category']);
@@ -640,14 +646,15 @@ register_widget('zuki_recentposts_big_two');
 /*-----------------------------------------------------------------------------------*/
 
 class zuki_recentposts_color extends WP_Widget {
-
-	function zuki_recentposts_color() {
-		$widget_ops = array('description' => __( 'Medium-sized Recents Posts with a background color.', 'zuki') );
-
-		parent::WP_Widget(false, __('Zuki: Recent Posts (Background)', 'zuki'),$widget_ops);
+	
+	public function __construct() {
+		parent::__construct( 'zuki_recentposts_color', __( 'Zuki: Recent Posts (Background)', 'zuki' ), array(
+			'classname'   => 'widget_zuki_recentposts_color',
+			'description' => __( 'Medium-sized Recents Posts with a background color.', 'zuki' ),
+		) );
 	}
 
-	function widget($args, $instance) {
+	public function widget($args, $instance) {
 		$title = $instance['title'];
 		$postnumber = $instance['postnumber'];
 		$category = apply_filters('widget_title', $instance['category']);
@@ -750,13 +757,14 @@ register_widget('zuki_recentposts_color');
 
 class zuki_quote extends WP_Widget {
 
-	function zuki_quote() {
-		$widget_ops = array('description' => 'A big quote or text slogan.' , 'zuki');
-
-		parent::WP_Widget(false, __('Zuki: Quote', 'zuki'),$widget_ops);
+	public function __construct() {
+		parent::__construct( 'zuki_quote', __( 'Zuki: Quote', 'zuki' ), array(
+			'classname'   => 'widget_zuki_quote',
+			'description' => __( 'A big quote or text slogan.', 'zuki' ),
+		) );
 	}
 
-	function widget($args, $instance) {
+	public function widget($args, $instance) {
 		extract( $args );
 		$title = $instance['title'];
 		$quotetext = $instance['quotetext'];

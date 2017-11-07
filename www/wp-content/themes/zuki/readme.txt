@@ -2,7 +2,7 @@
 ----------------------------------------------------------------------------------------------------------------------------
 
 For a detailed theme documentation + video tutorials please visit:
-http://www.elmastudio.de/en/themes/zuki/ (English) or http://www.elmastudio.de/wordpress-themes/zuki/ (German)
+https://www.elmastudio.de/en/themes/zuki/ (English) or https://www.elmastudio.de/wordpress-themes/zuki/ (German)
 
 Please use the the Elmastudio theme forum: http://themeforum.elmastudio.de/ to ask all questions regarding the Zuki theme.
 
@@ -10,6 +10,33 @@ Please use the the Elmastudio theme forum: http://themeforum.elmastudio.de/ to a
 
 
 Changelog:
+
+Version 1.1.5 (05/05/2017)
+----------------------------------------------------------------------------------------------------------------------------
+- Enhancement: Optimize support for the One Click Demo Import plugin.
+- Bug Fix: Fixed Genericons icons issue (from theme version 1.1.4).
+
+
+Version 1.1.4 (13/03/2017)
+----------------------------------------------------------------------------------------------------------------------------
+- New: Support for the One Click Demo Import plugin.
+
+
+Version 1.1.3 (19/08/2015)
+----------------------------------------------------------------------------------------------------------------------------
+- Bug Fix: Update of inc/widget.php file to make theme WordPress 4.3 compatible (inc/widgets.php)
+- Bug fix: Fixed the background color option for the Recent Post Background widget (functions.php, inc/customizer.php)
+- Bug Fix: Missing button shortcode colors (style.css)
+
+
+Version 1.1.2 (14/05/2015)
+----------------------------------------------------------------------------------------------------------------------------
+- Security Improvement: Added new Genericons icon font version 3.3.1 (folder Genericons)
+-Bug Fix: Optimized inc/customizer.php
+-Bug Fix: CSS optimization for social icon positioniong in Safari
+- Enhancement: Included additional content width settings for full-width page template
+- Enhancement: Update of js/jquery.flexslider.js to version 2.4.0
+
 
 Version 1.1.1 (07/01/2015)
 ----------------------------------------------------------------------------------------------------------------------------

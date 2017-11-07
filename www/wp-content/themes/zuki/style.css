@@ -4,10 +4,10 @@ Theme URI: http://www.elmastudio.de/en/themes/zuki/
 Author: Elmastudio
 Author URI: http://www.elmastudio.de/en/
 Description: Zuki is an elegant, modern and flexible Magazine theme with a custom front page and a default blog layout. With Zukis multiple Recent Posts widgets and the Front page widget areas it's easy to create a Magazine-style blog in just a few, simple steps.
-Version: 1.1.1
+Version: 1.1.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: white, light, one-column, two-column, three-column, four-column, five-column, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, sticky-post, translation-ready
+Tags: one-column, custom-background, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, sticky-post, translation-ready
 Text Domain: zuki
 */
 
@@ -50,10 +50,10 @@ figcaption { text-align: center; }
 img { border: 0; -ms-interpolation-mode: bicubic;}
 a:hover, a:active, a:focus { outline: none; -moz-outline-style: none;}
 input {-webkit-border-radius:0; border-radius:0;}
-::-webkit-input-placeholder {color: #333;}
-:-moz-placeholder {color: #333;}
-::-moz-placeholder {color: #333;}
-:-ms-input-placeholder {color: #333;}
+::-webkit-input-placeholder {color: #191919;}
+:-moz-placeholder {color: #191919;}
+::-moz-placeholder {color: #191919;}
+:-ms-input-placeholder {color: #191919;}
 *, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
 /* Clearfix */
@@ -74,7 +74,7 @@ body {
 	height: 100%;
 	display: block;
 	font-family: 'Libre Baskerville', Georgia, serif;
-	color: #333;
+	color: #191919;
 	background: #fff;
 }
 #container {
@@ -125,11 +125,11 @@ a.archive-menu-toggle,
 /* --- Headings --- */
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Karla', Arial, sans-serif;
-	color: #333;
+	color: #000;
 	font-weight: bold;
 	-webkit-hyphens: auto;
-	   -moz-hyphens: auto;
-	    -ms-hyphens: auto;
+		 -moz-hyphens: auto;
+			-ms-hyphens: auto;
 			hyphens: auto;
 }
 h1 {
@@ -328,7 +328,7 @@ table th {
 	padding: 10px 10px 10px 0;
 	text-align:left;
 	font-weight: bold;
-	color: #333;
+	color: #000;
 }
 
 /* --- after / before --- */
@@ -376,7 +376,7 @@ textarea {
 	padding: 10px;
 	border: 1px solid #cacaca;
 	background: #fff;
-	color: #333;
+	color: #000;
 	font-family: 'Libre Baskerville', Georgia, serif;
 	font-size: 13px;
 	font-size: 0.8125rem;
@@ -405,15 +405,11 @@ textarea:active {
 	outline: none;
 }
 
-.clear {
-	clear:both;
-}
-
 /* --- Buttons --- */
 input[type="button"],
 input[type="submit"] {
 	padding: 15px 15px 14px;
-	background: #333;
+	background: #000;
 	color:  rgba(255, 255, 255, 0.85);
 	border: none;
 	font-family: 'Karla', Arial, sans-serif;
@@ -445,7 +441,7 @@ input[type="button"]:hover,
 input[type="submit"]:hover,
 input#submit:hover,
 .widget_blog_subscription input[type="submit"]:hover {
-	background: #333;
+	background: #000;
 	color: #fff;
 }
 
@@ -454,7 +450,7 @@ input#submit:hover,
 /*	3.0 Links + Colors
 /*-----------------------------------------------------------------------------------*/
 a {
-	color: #333;
+	color: #191919;
 	text-decoration: none;
 }
 .widget-area p.summary a,
@@ -464,12 +460,12 @@ blockquote cite a,
 .textwidget a,
 #comments .comment-text a,
 .authorbox p.author-description a {
-	color: #333;
+	color: #000;
 	border-bottom: 1px solid #ccc;
 	outline: none;
 }
 .widget-area .rp-color p.summary a {
-	color: #333;
+	color: #191919;
 	border-bottom: 1px solid #444;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
@@ -479,7 +475,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 #colophon a,
 .authorbox p.author-name a,
 .page .entry-content a {
-	color: #333;
+	color: #000;
 	-webkit-transition: all linear 0.1s;
 	-moz-transition: all linear 0.1s;
 	-o-transition: all linear 0.1s;
@@ -495,7 +491,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 }
 .widget-area .rp-small-two p.summary a,
 .widget-area .rp-color a:hover {
-	color: #333;
+	color: #191919;
 }
 #site-info a {
 	font-weight: bold;
@@ -511,7 +507,7 @@ blockquote cite a:hover,
 #comments .comment-text a:hover,
 .authorbox p.author-description a:hover,
 a.archive-menu-toggle:hover span {
-	color: #333;
+	color: #191919;
 	border-bottom: 1px solid #444;
 }
 h1 a:hover,
@@ -571,7 +567,7 @@ a.archive-menu-toggle span,
 .archive-menu-content .archive-menu-tags a:hover,
 .archive-menu-content ul li.cat-item a:hover,
 .archive-menu-content .list-authors a:hover span.author-name {
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid #000;
 }
 .widget-area p.summary a:hover,
 .widget-area .rp-color .entry-header a:hover,
@@ -591,13 +587,13 @@ a.archive-menu-toggle span,
 	transition: all linear 0.1s;
 }
 .textwidget a  {
-	color: #333;
+	color: #000;
 	font-weight: bold;
 }
 
 /* --- More Link --- */
 .post .entry-content a.more-link {
-	color: #333;
+	color: #000;
 	background-image: none;
 	border: none;
 	display: inline-block;
@@ -645,7 +641,7 @@ a img {
 	word-wrap: break-word;
 }
 #site-title h1 a:hover {
-	color: #333;
+	color: #000;
 }
 #site-title h2.site-description {
 	display: none;
@@ -691,7 +687,7 @@ a img {
 	-webkit-font-smoothing: antialiased;
 	font: normal 18px/1 'Genericons';
 	line-height: 1;
-	color: #333;
+	color: #000;
 	vertical-align: top;
 	width: 100%;
 	padding: 14px 0 0 0;
@@ -701,7 +697,7 @@ a img {
 #mobile-menu-close {
 	display: block;
 	position: relative;
-	background: #333;
+	background: #000;
 	height: 30px;
 }
 #mobile-menu-toggle span,
@@ -793,7 +789,7 @@ a img {
 	display: inline-block;
 	-webkit-font-smoothing: antialiased;
 	font: normal 18px/1 'Genericons';
-	color: #333;
+	color: #191919;
 	vertical-align: top;
 	width: 70px;
 	height: 36px;
@@ -835,7 +831,6 @@ a img {
 	font-size: 18px;
 	font-size: 1.125rem;
 	line-height: 1.35;
-	color:#333;
 }
 #site-nav ul li li  {
 	padding: 10px 0;
@@ -872,10 +867,10 @@ a.archive-menu-close {
 	right: 20px;
 	width: 25px;
 	height: 25px;
-	background: #333;
+	background: #000;
 	-webkit-border-radius: 40px;
-	   -moz-border-radius: 40px;
-	   	 	border-radius: 40px;
+		 -moz-border-radius: 40px;
+					border-radius: 40px;
 }
 a.archive-menu-close:after {
 	content: '\f405';
@@ -909,7 +904,7 @@ a.archive-menu-toggle {
 	margin: 0 0 23px;
 	padding: 0 0 7px 14px;
 	text-align: center;
-	color: #333;
+	color: #191919;
 }
 a.archive-menu-toggle:before {
 	content: '\f452';
@@ -927,9 +922,9 @@ a.archive-menu-toggle.archive-open:before {
 	padding-top: 3px;
 		-moz-transform: rotate(90deg);
 	 -webkit-transform: rotate(90deg);
-	 	  -o-transform: rotate(90deg);
-	 	 -ms-transform: rotate(90deg);
-	 	 	 transform: rotate(90deg);
+			 -o-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);
+				 transform: rotate(90deg);
 }
 .archive-menu-content ul,
 .archive-menu-tags {
@@ -1064,7 +1059,6 @@ a.archive-menu-close span,
 	display: block;
 	margin: 0;
 	padding: 0 0 20px;
-	color: #333;
 	font-family: 'Libre Baskerville', Georgia, serif;
 	font-size: 22px;
 	font-size: 1.375rem;
@@ -1212,15 +1206,6 @@ a.archive-menu-close span,
 	font-weight: bold;
 }
 
-.single-post img.wp-post-image {
-	width: 50%;
-	height: auto;
-	float: right;
-	margin: 15px;
-	margin-top: 35px;
-	margin-right:0;
-}
-
 /* --- Typography --- */
 .entry-content p,
 .entry-content p.standard-text,
@@ -1299,7 +1284,7 @@ a[href$=jpeg],
 a[href$=jpe],
 a[href$=png],
 a[href$=gif]{
-    border-bottom: none !important;
+		border-bottom: none !important;
 }
 img.wp-post-image {
 	padding: 0;
@@ -1513,9 +1498,9 @@ video {
 	font-weight: normal;
 }
 .site-content ol.commentlist {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+		list-style: none;
+		margin: 0;
+		padding: 0;
 }
 .site-content ol.commentlist li {
 	display: block;
@@ -1709,7 +1694,7 @@ video {
 	margin: 8px 0 0;
 	padding: 10px 2%;
 	background: #fff;
-	color: #333;
+	color: #191919;
 	border: 1px solid #cacaca;
 	font-family: 'Libre Baskerville', Georgia, serif;
 	font-size: 13px;
@@ -1725,7 +1710,7 @@ video {
 	padding: 10px;
 	border: 1px solid #cacaca;
 	background: #fff;
-	color: #333;
+	color: #191919;
 	font-family: 'Libre Baskerville', Georgia, serif;
 	font-size: 13px;
 	font-size: 0.8125rem;
@@ -1778,7 +1763,7 @@ video {
 	font-style: normal;
 }
 #nav-single a span {
-	color: #333;
+	color: #000;
 }
 #nav-single .nav-next {
 	text-align: right;
@@ -1909,12 +1894,6 @@ video {
 	overflow: hidden;
 }
 
-.search .entry-thumbnail {
-	width: 50%;
-	margin-left: 15px;
-	float: right;
-}
-
 
 /*-----------------------------------------------------------------------------------*/
 /* 10.0 Widgets
@@ -1957,9 +1936,6 @@ video {
 	font-size: 0.8125rem;
 	line-height: 1.45;
 }
-.widget-area .widget ul li:last-child {
-	padding-bottom: 0;
-}
 .widget-area .widget_recent_comments ul li,
 .widget-area .widget_recent_entries ul li {
 	line-height: 1.3;
@@ -1977,7 +1953,7 @@ video {
 .wp_widget_tag_cloud div,
 .widget_tag_cloud div {
 	-ms-word-break: break-all;
-     word-break: break-all;
+		 word-break: break-all;
 	 word-break: break-word;
 }
 .widget_recent_comments a.url {
@@ -2190,10 +2166,10 @@ font-size: 0.8125rem;
 	font-size: 1rem;
 	color: #fff;
 	text-align: center;
-	background: #333;
+	background: #191919;
 	-webkit-border-radius: 50%;
-	   -moz-border-radius: 50%;
-	   	 	border-radius: 50%;
+		 -moz-border-radius: 50%;
+					border-radius: 50%;
 }
 .menu-social-container ul li a:before,
 #footer-social-nav ul li a:before {
@@ -2824,7 +2800,7 @@ font-size: 0.8125rem;
 	padding: 6px;
 	font-size: 13px;
 	font-size: 0.8125rem;
-	color: #333;
+	color: #191919;
 }
 .jetpack_subscription_widget input#subscribe-field:active,
 .jetpack_subscription_widget input#subscribe-field:focus {
@@ -2850,8 +2826,8 @@ font-size: 0.8125rem;
 	padding: 15px;
 	width: auto;
 	-webkit-border-radius: 400px;
-	   -moz-border-radius: 400px;
-	        border-radius: 400px;
+		 -moz-border-radius: 400px;
+					border-radius: 400px;
 }
 .comment-subscription-form .subscribe-label {
 	display: inline !important;
@@ -2992,7 +2968,7 @@ div.sharedaddy h3,
 #infinite-handle span {
 	background: none !important;
 	border-radius: 0;
-	color: #333 !important;
+	color: #191919 !important;
 	cursor: pointer;
 	display: inline-block;
 	padding: 0;
@@ -3095,7 +3071,7 @@ div.sharedaddy h3,
 	display: inline-block;
 	-webkit-font-smoothing: antialiased;
 	font: normal 24px/1 'Genericons';
-	color: #333;
+	color: #191919;
 	vertical-align: top;
 	width: 36px;
 	height: 36px;
@@ -3213,11 +3189,11 @@ div.sharedaddy h3,
 .green-box {background: #e7f3e0;}
 .lightgrey-box {background: #f7f0e4;}
 .grey-box {background: #f4f4f4;}
-.dark-box {background: #333;color: #fff; letter-spacing: 0.5px}
+.dark-box {background: #000;color: #fff; letter-spacing: 0.5px}
 .dark-box a:hover {color:#fff;}
 
 /* Buttons */
-.standard-btn {
+a.standard-btn {
 	display: inline-block;
 	margin: 0 0 26px;
 	padding: 12px 18px 11px;
@@ -3226,15 +3202,16 @@ div.sharedaddy h3,
 	font-family: 'Karla', Arial, sans-serif;
 	font-size: 12px;
 	font-size: 0.75rem;
-	background: #333;
+	background: #000;
 	color: rgba(255, 255, 255, 0.85);
+	border: none !important;
 	text-align: center;
 	font-weight: normal;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-decoration: none !important;
 	-webkit-transition: 0.2s background ease;
-	   -moz-transition: 0.2s background ease;
+		 -moz-transition: 0.2s background ease;
 		 -o-transition: 0.2s background ease;
 		-ms-transition: 0.2s background ease;
 			transition: 0.2s background ease;
@@ -3251,47 +3228,47 @@ div.sharedaddy h3,
 .round-btn {
  -webkit-border-radius: 50px;
 	-moz-border-radius: 50px;
-	     border-radius: 50px;
+			 border-radius: 50px;
 }
 .bold-btn {
 	font-weight:bold;
 }
-.standard-btn.xsmall-btn {
+a.standard-btn.xsmall-btn {
 	padding: 10px 15px;
 	font-size: 10px;
 	font-size: 0.625rem;
 }
-.standard-btn.small-btn {
+a.standard-btn.small-btn {
 	padding: 12px 20px;
 	font-size: 11px;
 	font-size: 0.6875rem;
 }
-.standard-btn.large-btn {
+a.standard-btn.large-btn {
 	padding: 15px 20px;
 	font-size: 14px;
 	font-size: 0.875rem;
 }
-.standard-btn.xlarge-btn {
+a.standard-btn.xlarge-btn {
 	padding: 17px 25px;
 	font-size: 16px;
 	font-size: 1rem;
 }
-.red-btn {background: #f17c67; color: #fff;}
-.red-btn:hover {background: #e23e32; color: #fff;}
-.green-btn {background: #86c166; color: #fff;}
-.green-btn:hover {background: #489130; color: #fff;}
-.blue-btn {background: #81c7d4; color: #fff;}
-.blue-btn:hover {background: #459baf; color: #fff;}
-.darkblue-btn {background: #7b90d2; color: #fff;}
-.darkblue-btn:hover {background: #3b54aa; color: #fff;}
-.purple-btn  {background: #b28fce; color: #fff;}
-.purple-btn:hover {background: #7b54a4; color: #fff;}
-.yellow-btn {background: #f9e530; color: #fff;}
-.yellow-btn:hover {background: #f2db0a; color: #fff;}
-.grey-btn {background: #bcbcbc; color: #333;}
-.grey-btn:hover {background: #999; color: #333;}
-.black-btn {background: #161616; color: rgba(255, 255, 255, 0.85);}
-.black-btn:hover {background: #333; color: #fff;}
+a.standard-btn.red-btn {background: #f17c67; color: #fff;}
+a.standard-btn.red-btn:hover {background: #e23e32; color: #fff;}
+a.standard-btn.green-btn {background: #86c166; color: #fff;}
+a.standard-btn.green-btn:hover {background: #489130; color: #fff;}
+a.standard-btn.blue-btn {background: #81c7d4; color: #fff;}
+a.standard-btn.blue-btn:hover {background: #459baf; color: #fff;}
+a.standard-btn.darkblue-btn {background: #7b90d2; color: #fff;}
+a.standard-btn.darkblue-btn:hover {background: #3b54aa; color: #fff;}
+a.standard-btn.purple-btn  {background: #b28fce; color: #fff;}
+a.standard-btn.purple-btn:hover {background: #7b54a4; color: #fff;}
+a.standard-btn.yellow-btn {background: #f9e530; color: #fff;}
+a.standard-btn.yellow-btn:hover {background: #f2db0a; color: #fff;}
+a.standard-btn.grey-btn {background: #bcbcbc; color: #000;}
+a.standard-btn.grey-btn:hover {background: #999; color: #000;}
+a.standard-btn.black-btn {background: #161616; color: rgba(255, 255, 255, 0.85);}
+a.standard-btn.black-btn:hover {background: #000; color: #fff;}
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -3750,11 +3727,6 @@ div.sharedaddy h3,
 		width: 60%;
 	}
 
-	/* --- Typography --- */
-	.entry-content .wide-content {
-		margin: 0 -160px 26px -40px;
-	}
-
 	/* --- Zuki Recent Posts Widgets + Featured Slider --- */
 	.front-fullwidth .rp-big-one .story,
 	#featured-content .rp-big-one .story {
@@ -3816,9 +3788,7 @@ div.sharedaddy h3,
 
 /* Minimum width of 1260 pixels (laptops 13")
 ------------------------------------------------------------------------------------ */
-/* @media screen and (min-width: 1260px) { */
-/* the mobile menu kicks in too early */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1260px) {
 
 	/* --- General --- */
 	#blog-sidebar,
@@ -3891,7 +3861,7 @@ div.sharedaddy h3,
 		display: inline-block;
 		-webkit-font-smoothing: antialiased;
 		font: normal 18px/1 'Genericons';
-		color: #333;
+		color: #191919;
 		vertical-align: top;
 		text-align: center;
 		width: 60px;
@@ -3918,7 +3888,7 @@ div.sharedaddy h3,
 		overflow: visible;
 	}
 	#site-nav {
-		padding: 35px 0px 60px;
+		padding: 56px 0 80px;
 	}
 	#site-nav ul  {
 			position: relative;
@@ -3946,7 +3916,7 @@ div.sharedaddy h3,
 		transition: all ease-in-out 0.2s;
 	}
 	#site-nav ul li a:hover {
-		border-bottom: 1px solid #333;
+		border-bottom: 1px solid #191919;
 	}
 	#site-nav ul li li a:hover {
 		border-bottom: none;
@@ -3990,7 +3960,7 @@ div.sharedaddy h3,
 	}
 	#site-nav ul.sub-menu a:hover,
 	#site-nav ul.children a:hover {
-		color: #333;
+		color: #191919;
 		-webkit-transition: all ease-in-out 0.2s;
 		-moz-transition: all ease-in-out 0.2s;
 		-o-transition: all ease-in-out 0.2s;
@@ -4004,7 +3974,7 @@ div.sharedaddy h3,
 	}
 	#site-nav ul li:hover > ul {
 		display: block;
-		border-left: 1px solid #333;
+		border-left: 1px solid #191919;
 		padding: 0;
 		-webkit-transition: all ease-in-out 0.2s;
 		-moz-transition: all ease-in-out 0.2s;
@@ -4012,7 +3982,7 @@ div.sharedaddy h3,
 		transition: all ease-in-out 0.2s;
 	}
 	#site-nav li:hover > a {
-		border-bottom: 1px  solid #333;
+		border-bottom: 1px  solid #191919;
 		-webkit-transition: all ease-in-out 0.2s;
 		-moz-transition: all ease-in-out 0.2s;
 		-o-transition: all ease-in-out 0.2s;
@@ -4044,6 +4014,15 @@ div.sharedaddy h3,
 	}
 	.entry-content p.pull-right {
 		margin: 2px -40px 10px 40px;
+	}
+	.entry-content .wide-content {
+		margin: 0 -160px 26px -40px;
+	}
+	.entry-content .wide-content p.pull-left {
+		margin: 2px 40px 10px 0;
+	}
+	.entry-content .wide-content p.pull-right {
+		margin: 2px 0 10px 40px;
 	}
 
 	/* --- Front Page / Featured Content Slider --- */
@@ -4167,7 +4146,7 @@ div.sharedaddy h3,
 @media print {
 	body {
 		background: none !important;
-		color: #333;
+		color: #000;
 		font-size: 11pt;
 	}
 	.site-title {

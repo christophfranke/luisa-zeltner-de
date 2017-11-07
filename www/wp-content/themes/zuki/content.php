@@ -20,7 +20,7 @@
 			<div class="entry-details">
 				<div class="entry-author">
 				<?php
-					printf( __( 'by <a href="%1$s" title="%2$s">%3$s</a>', 'zuki' ),
+					printf( __( 'Published by <a href="%1$s" title="%2$s">%3$s</a>', 'zuki' ),
 					esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 					sprintf( esc_attr__( 'All posts by %s', 'zuki' ), get_the_author() ),
 					get_the_author() );

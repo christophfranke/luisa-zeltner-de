@@ -40,15 +40,15 @@ function zuki_customize_register( $wp_customize ) {
 		'settings'   => 'link_color',
 	) ) );
 
-	$wp_customize->add_setting( 'widget_bg_color' , array(
+	$wp_customize->add_setting( 'widgetbg_color' , array(
     	'default'     => '#ebf8fe',
 		'transport'   => 'refresh',
 	) );
 
-	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'widget_bg_color', array(
+	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'widgetbg_color', array(
 		'label'        => __( 'Zuki Recent Posts Widget Background Color', 'zuki' ),
 		'section'    => 'colors',
-		'settings'   => 'widget_bg_color',
+		'settings'   => 'widgetbg_color',
 	) ) );
 
 	$wp_customize->add_setting( 'headerarchive_bg_color' , array(
@@ -148,11 +148,3 @@ function zuki_sanitize_checkbox( $input ) {
 		return false;
 	}
 }
-
-/**
- * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
- */
-function zuki_customize_preview_js() {
-	wp_enqueue_script( 'zuki-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20131221', true );
-}
-add_action( 'customize_preview_init', 'zuki_customize_preview_js' );

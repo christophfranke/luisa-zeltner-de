@@ -30,11 +30,15 @@
 			<?php if ( get_theme_mod( 'credit_text' ) ) : ?>
 				<li><?php echo wp_kses_post( get_theme_mod( 'credit_text' ) ); ?></li>
 			<?php else : ?>
-			<li class="copyright"><?php _e('Copyright', 'zuki') ?> &copy; <?php echo date('Y'); ?> <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo(); ?></a></li>
+			<li class="copyright"><?php _e('Copyright', 'zuki') ?> &copy; <?php echo date('Y'); ?> <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo(); ?>.</a></li>
+			<li class="wp-credit">
+				<?php _e('Proudly powered by', 'zuki') ?> <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'zuki' ) ); ?>" ><?php _e('WordPress.', 'zuki') ?></a>
+			</li>
+			<li>
+				<?php printf( __( 'Theme: %1$s by %2$s.', 'zuki' ), 'Zuki', '<a href="https://www.elmastudio.de/en/" rel="designer">Elmastudio</a>' ); ?>
+			</li>
 			<?php endif; ?>
 		</ul><!-- end .credit -->
-
-				
 	</div><!-- end #site-info -->
 
 </footer><!-- end #colophon -->

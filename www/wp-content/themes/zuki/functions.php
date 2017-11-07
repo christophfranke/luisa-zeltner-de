@@ -11,7 +11,16 @@
 /*-----------------------------------------------------------------------------------*/
 
 if ( ! isset( $content_width ) )
-    $content_width = 840;
+		$content_width = 840;
+
+function zuki_adjust_content_width() {
+		global $content_width;
+
+		if ( is_page_template( 'full-width.php' ) )
+				$content_width = 1200;
+}
+add_action( 'template_redirect', 'zuki_adjust_content_width' );
+
 
 /*-----------------------------------------------------------------------------------*/
 /* Sets up theme defaults and registers support for various WordPress features.
@@ -125,7 +134,7 @@ function zuki_scripts() {
 	wp_enqueue_style( 'zuki-fonts', zuki_font_url(), array(), null );
 
 	// Add Genericons font, used in the main stylesheet.
-	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.3' );
+	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/assets/genericons/genericons.css', array(), '3.0.3' );
 
 	// Loads main stylesheet.
 	wp_enqueue_style( 'zuki-style', get_stylesheet_uri(), array(), '20140630' );
@@ -226,13 +235,12 @@ function zuki_auto_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'zuki_auto_excerpt_more' );
 
-
 /*-----------------------------------------------------------------------------------*/
 /* Add Theme Customizer CSS
 /*-----------------------------------------------------------------------------------*/
 
 function zuki_customize_css() {
-    ?>
+		?>
 	<style type="text/css">
 		.widget-area p.summary a,
 		.entry-content p a,
@@ -242,10 +250,10 @@ function zuki_customize_css() {
 		.textwidget a,
 		#comments .comment-text a,
 		.authorbox p.author-description a {color: <?php echo get_theme_mod('link_color'); ?>;}
-		.widget_zuki_recentposts_color .bg-wrap {background: <?php echo get_theme_mod('widget_bg_color'); ?>;}
+		.widget_zuki_recentposts_color .bg-wrap {background: <?php echo get_theme_mod('widgetbg_color'); ?>;}
 		.archive-menu-content {background: <?php echo get_theme_mod('headerarchive_bg_color'); ?>;}
 	</style>
-    <?php
+		<?php
 }
 add_action( 'wp_head', 'zuki_customize_css');
 
@@ -336,7 +344,7 @@ function zuki_has_featured_posts() {
 
 function zuki_widgets_init() {
 
-	register_sidebar( array (
+	register_sidebar( array(
 		'name' => __( 'Blog - Sidebar', 'zuki' ),
 		'id' => 'blog-sidebar',
 		'description' => __( 'Widgets appear in a right-aligned sidebar on the default blog and on single posts.', 'zuki' ),
@@ -346,7 +354,7 @@ function zuki_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
-	register_sidebar( array (
+	register_sidebar( array(
 		'name' => __( 'Front Page - FullWidth Top', 'zuki' ),
 		'id' => 'front-fullwidth-top',
 		'description' => __( 'Widgets appear in a single-column widget area on the top of the Front Page (and above the Featured Content slider, if active).', 'zuki' ),
@@ -356,7 +364,7 @@ function zuki_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
-	register_sidebar( array (
+	register_sidebar( array(
 		'name' => __( 'Front Page - Post Content 1', 'zuki' ),
 		'id' => 'front-content-1',
 		'description' => __( 'Widgets appear left of Sidebar 1 and below the FullWidth Top widget area. This widget area is especially designed for the custom Zuki Posts by Category widgets.', 'zuki' ),
@@ -366,7 +374,7 @@ function zuki_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
-	register_sidebar( array (
+	register_sidebar( array(
 		'name' => __( 'Front Page - Sidebar 1', 'zuki' ),
 		'id' => 'front-sidebar-1',
 		'description' => __( 'Widgets appear in a right-aligned sidebar area next to the Post Content 1 widget area.', 'zuki' ),
@@ -376,7 +384,7 @@ function zuki_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
-	register_sidebar( array (
+	register_sidebar( array(
 		'name' => __( 'Front Page - FullWidth Center', 'zuki' ),
 		'id' => 'front-fullwidth-center',
 		'description' => __( 'Widgets will appear in a single-column widget area below the Post Content 1 and Sidebar 1 widget areas.', 'zuki' ),
@@ -386,7 +394,7 @@ function zuki_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
-	register_sidebar( array (
+	register_sidebar( array(
 		'name' => __( 'Front Page - Post Content 2', 'zuki' ),
 		'id' => 'front-content-2',
 		'description' => __( 'Widgets appear left of Sidebar 2 and below the FullWidth Center widget area. This widget area is especially designed for the custom Zuki Posts by Category widgets.', 'zuki' ),
@@ -396,7 +404,7 @@ function zuki_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
-	register_sidebar( array (
+	register_sidebar( array(
 		'name' => __( 'Front Page - Sidebar 2', 'zuki' ),
 		'id' => 'front-sidebar-2',
 		'description' => __( 'Widgets appear in a right-aligned sidebar area next to the Post Content 2 widget area.', 'zuki' ),
@@ -406,7 +414,7 @@ function zuki_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
-	register_sidebar( array (
+	register_sidebar( array(
 		'name' => __( 'Front Page - FullWidth Bottom', 'zuki' ),
 		'id' => 'front-fullwidth-bottom',
 		'description' => __( 'Widgets will appear in a single-column widget area at the bottom of your Front Page above the footer.', 'zuki' ),
@@ -416,7 +424,7 @@ function zuki_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
-	register_sidebar( array (
+	register_sidebar( array(
 		'name' => __( 'Footer - 1', 'zuki' ),
 		'id' => 'footer-one',
 		'description' => __( 'First widget area of the 5-column Footer widget area.', 'zuki' ),
@@ -426,7 +434,7 @@ function zuki_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
-	register_sidebar( array (
+	register_sidebar( array(
 		'name' => __( 'Footer - 2', 'zuki' ),
 		'id' => 'footer-two',
 		'description' => __( 'Second widget area of the 5-column Footer widget area.', 'zuki' ),
@@ -436,7 +444,7 @@ function zuki_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
-	register_sidebar( array (
+	register_sidebar( array(
 		'name' => __( 'Footer - 3', 'zuki' ),
 		'id' => 'footer-three',
 		'description' => __( 'Third widget area of the 5-column Footer widget area.', 'zuki' ),
@@ -446,7 +454,7 @@ function zuki_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
-	register_sidebar( array (
+	register_sidebar( array(
 		'name' => __( 'Footer - 4', 'zuki' ),
 		'id' => 'footer-four',
 		'description' => __( 'Fourth widget area of the 5-column Footer widget area.', 'zuki' ),
@@ -456,7 +464,7 @@ function zuki_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
-	register_sidebar( array (
+	register_sidebar( array(
 		'name' => __( 'Footer - 5', 'zuki' ),
 		'id' => 'footer-five',
 		'description' => __( 'Fifth widget area of the 5-column Footer widget area.', 'zuki' ),
@@ -509,8 +517,8 @@ function zuki_post_nav() {
 	?>
 	<div class="nav-wrap cf">
 		<nav id="nav-single">
-			<div class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">Vorheriges Rezept</span>%title', 'zuki' ) ); ?></div>
-			<div class="nav-next"><?php next_post_link('%link', __( '<span class="meta-nav">Nächstes Rezept</span>%title', 'zuki' ) ); ?></div>
+			<div class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">Previous Post</span>%title', 'zuki' ) ); ?></div>
+			<div class="nav-next"><?php next_post_link('%link', __( '<span class="meta-nav">Next Post</span>%title', 'zuki' ) ); ?></div>
 		</nav><!-- #nav-single -->
 	</div><!-- end .nav-wrap -->
 	<?php
@@ -533,22 +541,6 @@ function zuki_body_class( $classes ) {
 add_filter( 'body_class', 'zuki_body_class' );
 
 
-function google_analytics_script()
-{
-	include( get_template_directory() . '/google-analytics.php');
-}
-add_action('wp_footer', 'google_analytics_script');
-
-function append_print_buttons_function()
-{
-	$link_print = get_permalink( $post->ID ) . '?print=print';
-	$link_pdf = get_permalink( $post->ID ) . '?print=pdf';
-
-	echo '<br><a href="' . $link_print . '" target="_blank">Drucken</a>';
-	echo ' / <a href="' . $link_pdf . '" target="_blank">PDF</a>';
-}
-add_action('append_print_buttons', 'append_print_buttons_function');
-
 /*-----------------------------------------------------------------------------------*/
 /* Customizer additions
 /*-----------------------------------------------------------------------------------*/
@@ -569,3 +561,7 @@ require( get_template_directory() . '/inc/widgets.php' );
 /*-----------------------------------------------------------------------------------*/
 require( get_template_directory() . '/inc/shortcodes.php' );
 
+/*-----------------------------------------------------------------------------------*/
+/* Add One Click Demo Import code.
+/*-----------------------------------------------------------------------------------*/
+require get_template_directory() . '/inc/demo-installer.php';
