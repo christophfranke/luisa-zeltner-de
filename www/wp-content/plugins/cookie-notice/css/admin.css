@@ -33,6 +33,10 @@
     padding: 5px 0 0 4px;
 }
 
+.df-promo h4 {
+    margin-bottom: 0;
+}
+
 .cookie-notice-settings .df-credits form {
     min-width: 260px;
     margin-bottom: 1em;
@@ -60,12 +64,6 @@
     width: 100%;
 }
 
-.cookie-notice-settings fieldset span.description {
-    margin-bottom: 8px;
-    margin-top: 4px;
-    display: block;
-}
-
 .cookie-notice-settings .ui-button {
     margin-bottom: 5px;
 }
@@ -82,6 +80,22 @@
 
 #cn_colors div {
     vertical-align: middle;
+}
+
+#cn_refuse_code .nav-tab-wrapper {
+	padding-top: 0;
+}
+
+#cn_refuse_code .refuse-code-tab {
+	display: none;
+}
+
+#cn_refuse_code .refuse-code-tab.active {
+	display: block;
+}
+
+#cn_refuse_code .refuse-code-tab .description {
+	margin-top: 10px;
 }
 
 /* All Mobile Sizes (devices and browser) */

