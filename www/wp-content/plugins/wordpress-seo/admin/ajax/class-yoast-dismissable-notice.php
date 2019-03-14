@@ -1,16 +1,35 @@
 <?php
 /**
- * @package WPSEO\admin|ajax
+ * WPSEO plugin file.
+ *
+ * @package WPSEO\Admin\Ajax
  */
 
-/** *
+/**
  * This class will catch the request to dismiss the target notice (set by notice_name) and will store the dismiss status as an user meta
  * in the database
  */
 class Yoast_Dismissable_Notice_Ajax {
 
+	/**
+	 * Notice type toggle value for user notices.
+	 *
+	 * @var string
+	 */
 	const FOR_USER = 'user_meta';
+
+	/**
+	 * Notice type toggle value for network notices.
+	 *
+	 * @var string
+	 */
 	const FOR_NETWORK = 'site_option';
+
+	/**
+	 * Notice type toggle value for site notices.
+	 *
+	 * @var string
+	 */
 	const FOR_SITE = 'option';
 
 
