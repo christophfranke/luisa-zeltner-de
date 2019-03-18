@@ -28,7 +28,7 @@ else
 {
 	define('DB_NAME', 'db12538803-luisa');
 	define('DB_USER', 'db12538803-luisa');
-	define('DB_PASSWORD', 'sahnetorte');
+	define('DB_PASSWORD', 'q7eLFMiMHzKjqwW3upPv');
 	define('DB_HOST', 'localhost');
 
 	define('WP_SITEURL', 'http://luisazeltner.de');
