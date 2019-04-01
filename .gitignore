@@ -6,3 +6,4 @@ www/wp-config-local.php
 
 Datenbank/
 Dokumentation/
+.htpasswd
